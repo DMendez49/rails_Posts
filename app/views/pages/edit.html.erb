@@ -1,0 +1,15 @@
+<center><h1>Post a Note</h1></center>
+<%= form_for @page do |f| %>
+ <center> <%= f.label :title %>
+  <%= f.text_field  :title %></center>
+  </br>
+
+  <center><%= f.label :poet %>
+  <%= f.text_field :author %></center>
+  </br>
+
+  <center><%= f.label :note %>
+  <%= f.text_area :body %></center>
+
+  <%= f.submit %>
+<% end %>

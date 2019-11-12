@@ -1,0 +1,16 @@
+<h1>Post It Notes</h1>
+<%= form_for @page do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  </br>
+</br>
+  <%= f.label :postet %>
+  <%= f.text_field :author %>
+  </br>
+  </br>
+  <%= f.label :note %>
+  <%= f.text_area :body %>
+  </br>
+  </br>
+  <%= f.submit %>
+<% end %>
